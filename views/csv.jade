@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+
+  #container
+  table
+    thead
+      tr: th 
+    tbody
+      each row in rows
+        tr
+        each column in row
+          td 
+            p= column

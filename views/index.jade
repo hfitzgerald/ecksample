@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+
+  #container
+    form(method="post",enctype="multipart/form-data",action="/")
+      input(type="file", name="csv_upload")
+      input(type="submit")
